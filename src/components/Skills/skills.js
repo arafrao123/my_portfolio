@@ -1,5 +1,4 @@
 "use client";
-import { AnimationOnScroll } from "react-animation-on-scroll";
 
 export default function MySkills() {
   return (

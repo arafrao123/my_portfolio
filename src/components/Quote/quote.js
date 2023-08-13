@@ -1,24 +1,49 @@
 "use client";
-import "aos/dist/aos.css";
-import { AnimationOnScroll } from "react-animation-on-scroll";
+import React, { useEffect, useState } from "react";
+import { useSpring, animated } from "react-spring";
+import "animate.css";
 
 export default function Quote() {
+  const [isVisible, setIsVisible] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 200) {
+        setIsVisible(true);
+      } else {
+        setIsVisible(false);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
+  const fadeInLeft = useSpring({
+    opacity: isVisible ? 1 : 0,
+    transform: isVisible ? "translateX(0)" : "translateX(-20px)",
+  });
+
+  const fadeInRight = useSpring({
+    opacity: isVisible ? 1 : 0,
+    transform: isVisible ? "translateX(0)" : "translateX(20px)",
+  });
+
   return (
     <div className="md:grid md:grid-cols-2 md:mt-20 md:visible hidden">
-      <AnimationOnScroll animateIn="animate__fadeInLeft">
-        <div className="col-span-1 ">
-          <img src="/quoteimg.png" />
-        </div>
-      </AnimationOnScroll>
+      <animated.div className="col-span-1" style={fadeInLeft}>
+        <img src="/quoteimg.png" alt="Quote" />
+      </animated.div>
 
-      <div className="col-span-1 mt-20">
-        <AnimationOnScroll animateIn="animate__fadeInUp">
-          <h3 className="text-center md:text-[38px] text-[20px] font-extrabold text-blue-950 md:mt-10  p-6 md:p-0">
-            From Novice to Navigator - Embarking on a Front-End Journey Fueled
-            by Curiosity.
-          </h3>
-        </AnimationOnScroll>
-      </div>
+      <animated.div className="col-span-1 mt-20" style={fadeInRight}>
+        <h3 className="text-center md:text-[38px] text-[20px] font-extrabold text-blue-950 md:mt-10  p-6 md:p-0">
+          From Novice to Navigator - Embarking on a Front-End Journey Fueled by
+          Curiosity.
+        </h3>
+      </animated.div>
     </div>
   );
 }
