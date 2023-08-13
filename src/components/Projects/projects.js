@@ -8,7 +8,7 @@ export default function Projects() {
           My Projects
         </h1>
       </div>
-      <div className="grid grid-cols-6 gap-4 text-center">
+      <div className="grid lg:grid-cols-6  text-center grid-rows-1 gap-5 lg:mx-5 lg:gap-2">
         <Link href="https://github.com/arafrao123/flutter_project">
           <div className="col-span-1 p-5 font-bold border-blue-700 border-4 rounded-2xl h-full w-full bg-gray-400 bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-10 hover:animate-bounce text-center shadow-2xl shadow-blue-500/20 ">
             BMI Calculator
