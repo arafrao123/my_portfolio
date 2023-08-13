@@ -134,7 +134,7 @@ export default function Footer() {
         </div>
 
         <div className="col-span-1 xs:hidden lg:visible ">
-          <img src="Saly-14 (1).png" className="hover:animate-bounce" />
+          <img src="./Saly-14 (1).png" className="hover:animate-bounce" />
         </div>
       </div>
     </section>

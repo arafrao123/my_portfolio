@@ -35,7 +35,7 @@ export default function Quote() {
   return (
     <div className="md:grid md:grid-cols-2 md:mt-20 md:visible hidden">
       <animated.div className="col-span-1" style={fadeInLeft}>
-        <img src="quoteimg.png" alt="Quote" />
+        <img src="./quoteimg.png" alt="Quote" />
       </animated.div>
 
       <animated.div className="col-span-1 mt-20" style={fadeInRight}>

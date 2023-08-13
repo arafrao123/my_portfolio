@@ -11,35 +11,35 @@ export default function MySkills() {
 
       <div className="grid lg:grid-cols-8 lg:gap-3 grid-rows-1 gap-5">
         <div className="lg:col-span-1 p-5  border-blue-700 border-4 rounded-2xl h-full w-full bg-gray-400 bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-10 hover:animate-bounce grid justify-center ">
-          <img src="javascript.png" />
+          <img src="./javascript.png" />
         </div>
 
         <div className="lg:col-span-1 p-5  border-blue-700 border-4 rounded-2xl h-full w-full bg-gray-400 bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-10 hover:animate-bounce grid justify-center  ">
-          <img src="css.png" />
+          <img src="./css.png" />
         </div>
 
         <div className="lg:col-span-1 p-5  border-blue-700 border-4 rounded-2xl h-full w-full bg-gray-400 bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-10 hover:animate-bounce grid justify-center  ">
-          <img src="html.png" />
+          <img src="./html.png" />
         </div>
 
         <div className="lg:col-span-1 p-5  border-blue-700 border-4 rounded-2xl h-full w-full bg-gray-400 bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-10 hover:animate-bounce grid justify-center  ">
-          <img src="flutter.png" />
+          <img src="./flutter.png" />
         </div>
 
         <div className="lg:col-span-1 p-5  border-blue-700 border-4 rounded-2xl h-full w-full bg-gray-400 bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-10 hover:animate-bounce grid justify-center ">
-          <img src="c-plus-plus.png" />
+          <img src="./c-plus-plus.png" />
         </div>
 
         <div className="lg:col-span-1 p-5  border-blue-700 border-4 rounded-2xl h-full w-full bg-gray-400 bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-10 hover:animate-bounce grid justify-center  ">
-          <img src="tailwind.png" />
+          <img src="./tailwind.png" />
         </div>
 
         <div className="lg:col-span-1 p-5  border-blue-700 border-4 rounded-2xl h-full w-full bg-gray-400 bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-10 hover:animate-bounce grid justify-center  ">
-          <img src="react.png" />
+          <img src="./react.png" />
         </div>
 
         <div className="lg:col-span-1 p-5  border-blue-700 border-4 rounded-2xl h-full w-full bg-gray-400 bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-10 hover:animate-bounce grid justify-center ">
-          <img src="bootstrap.png" />
+          <img src="./bootstrap.png" />
         </div>
       </div>
     </section>
