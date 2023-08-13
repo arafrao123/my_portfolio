@@ -35,4 +35,6 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 
 **npm:** The Node Package Manager (npm) was used to manage project dependencies, making it easy to integrate external libraries and tools.
 
+## Live Demo
+View Live demo at [https://arafrao123.github.io/my_portfolio/](https://arafrao123.github.io/my_portfolio/)
 
