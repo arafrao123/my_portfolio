@@ -3,6 +3,64 @@ import React, { useState } from "react";
 import { AnimationOnScroll } from "react-animation-on-scroll";
 
 export default function Footer() {
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    message: "",
+  });
+
+  const [errors, setErrors] = useState({
+    name: "",
+    email: "",
+    message: "",
+  });
+
+  const handleInputChange = (e) => {
+    const { name, value } = e.target;
+    setFormData((prevData) => ({
+      ...prevData,
+      [name]: value,
+    }));
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+
+    let formValid = true;
+    const newErrors = {
+      name: "",
+      email: "",
+      message: "",
+    };
+
+    if (formData.name.trim() === "") {
+      formValid = false;
+      newErrors.name = "Name is required";
+    }
+
+    if (formData.email.trim() === "") {
+      formValid = false;
+      newErrors.email = "Email is required";
+    } else if (
+      !/^[\w-]+(\.[\w-]+)*@([\w-]+\.)+[a-zA-Z]{2,7}$/.test(formData.email)
+    ) {
+      formValid = false;
+      newErrors.email = "Invalid email format";
+    }
+
+    if (formData.message.trim() === "") {
+      formValid = false;
+      newErrors.message = "Message is required";
+    }
+
+    if (formValid) {
+      // Submit the form or perform other actions here
+      console.log("Form submitted:", formData);
+    } else {
+      setErrors(newErrors);
+    }
+  };
+
   return (
     <section id="contact-me" className="  my-4 h-full w-full ">
       <div className="grid justify-center">
@@ -18,6 +76,7 @@ export default function Footer() {
               method="POST"
               className="w-full mt-20 px-8 border-4 border-[#56555D] py-10 rounded-2xl
             bg-gray-400  bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-10  "
+              onSubmit={handleSubmit}
             >
               <div className="mb-4">
                 <label
