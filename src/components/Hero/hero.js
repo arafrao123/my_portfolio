@@ -66,7 +66,7 @@ export default function Hero() {
           style={fadeInRight}
         >
           <div className="flex justify-center w-[90%] h-[60%] lg:w-full lg:h-full lg:grid">
-            <img src="/Saly-10.png" alt="Profile" />
+            <img src="Saly-10.png" alt="Profile" />
           </div>
         </animated.div>
       </div>

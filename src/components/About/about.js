@@ -11,7 +11,7 @@ export default function AboutMe() {
       <div className="grid grid-rows-1 ">
         <div className="row-span-1 grid justify-center rounded-full h-50 w-50 mb-8 ">
           <img
-            src="/image.png"
+            src="image.png"
             className="rounded-full"
             height={250}
             width={250}
