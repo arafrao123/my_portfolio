@@ -15,7 +15,7 @@ export default function Hero() {
     opacity: 1,
     transform: "translateX(0)",
     from: { opacity: 0, transform: "translateX(-20px)" },
-    delay: 1000,
+    delay: 500,
   });
 
   const fadeInBottom = useSpring({
