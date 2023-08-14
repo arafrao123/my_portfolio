@@ -4,12 +4,12 @@ export default function AboutMe() {
   return (
     <section id="about" className="my-6 ">
       <div className="grid justify-center ">
-        <h1 className="text-center font-extrabold text-[32px] mt-10 mb-12 py-2 px-4 text-black border border-gray-600 w-fit rounded-xl ">
+        <h1 className="text-center font-extrabold text-[22px] md:text-[28px] lg:text-[32px] md:mt-6 lg:mt-10 mt-3 mb-12 py-2 px-4 text-black border border-gray-600 w-fit rounded-xl">
           About Me
         </h1>
       </div>
       <div className="grid grid-rows-1 ">
-        <div className="row-span-1 grid justify-center rounded-full h-50 w-50 mb-8 ">
+        <div className="row-span-1 grid justify-center rounded-full  mb-8 ">
           <img
             src="./image.png"
             className="rounded-full"

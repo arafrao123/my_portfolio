@@ -65,7 +65,7 @@ export default function Hero() {
           className="col-span-1 animate__animated animate__fadeInRight  grid  h-min-fit justify-center "
           style={fadeInRight}
         >
-          <div className="flex justify-center w-[90%] h-[60%] lg:w-full lg:h-full lg:grid">
+          <div className="flex justify-center pr-10 md:pr-0 lg:w-full lg:h-full lg:grid">
             <img src="./Saly-10.png" alt="Profile" />
           </div>
         </animated.div>

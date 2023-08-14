@@ -5,12 +5,12 @@ export default function Footer() {
   return (
     <section id="contact-me" className="my-4 h-full w-full">
       <div className="grid justify-center">
-        <h1 className="text-center font-extrabold text-[32px] mt-10 mb-12 py-2 px-4 text-black border border-gray-600 w-fit rounded-xl">
+        <h1 className="text-center font-extrabold text-[22px] md:text-[28px] lg:text-[32px] md:mt-6 lg:mt-10 mt-3 md:mb-6 mb-0 lg:mb-12  py-2 px-4 text-black border border-gray-600 w-fit rounded-xl">
           Contact Me
         </h1>
       </div>
       <div className="lg:grid lg:grid-cols-3 mx-7">
-        <div className="col-span-2 mt-10">
+        <div className="col-span-2 md:mt-10 mt-0">
           <form
             action="https://getform.io/f/4b04c959-c718-4a67-aae6-5fcbe4a48ae0"
             method="POST"

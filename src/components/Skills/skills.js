@@ -4,7 +4,7 @@ export default function MySkills() {
   return (
     <section className="my-9">
       <div className="grid justify-center">
-        <h1 className="text-center font-extrabold text-[32px] mt-10 mb-12 py-2 px-4 text-black border border-gray-600 w-fit rounded-xl">
+        <h1 className="text-center font-extrabold text-[22px] md:text-[28px] lg:text-[32px] md:mt-6 lg:mt-10 mt-3 mb-12 py-2 px-4 text-black border border-gray-600 w-fit rounded-xl">
           My Skills
         </h1>
       </div>
