@@ -73,7 +73,7 @@ export default function Footer() {
           </form>
         </div>
 
-        <div className="col-span-1 xs:hidden lg:visible">
+        <div className="col-span-1 grid items-center justify-center ">
           <img
             src="./Saly-14 (1).png"
             alt="Illustration"
