@@ -2,34 +2,38 @@
 
 export default function AboutMe() {
   return (
-    <section id="about" className="my-6 ">
-      <div className="grid justify-center ">
-        <h1 className="text-center font-extrabold text-[22px] md:text-[28px] lg:text-[32px] md:mt-6 lg:mt-10 mt-3 mb-12 py-2 px-4 text-black border border-gray-600 w-fit rounded-xl">
-          About Me
+    <>
+      <section id="about-me" className="mx-5 my-6 bg-transparent  rounded-md">
+        <h1 className="font-newsreader text-3xl font-extrabold p-4 text-center justify-center flex">
+          {" "}
+          ABOUT ME
         </h1>
-      </div>
-      <div className="grid grid-rows-1 ">
-        <div className="row-span-1 grid justify-center rounded-full  mb-8 ">
-          <img
-            src="./image.png"
-            className="rounded-full"
-            height={250}
-            width={250}
-          />
+        <div className="grid justify-center">
+          <img src="/aboutme.svg" alt="mine" />
         </div>
-
-        <div className="row-span-1 text-center text-[18px] p-6 hover:text-[20px]">
-          Hey there! 👋 I'm Araf Khalid, a coding enthusiast diving into digital
-          marvels. I've conjured a Flutter BMI Calculator – adding magic to even
-          the tiniest of bytes! 🪄 As I sail the job hunt, I promise to turn
-          error messages into epic tales with a grin. Armed with HTML, CSS,
-          JavaScript, and React zeal that can fuel a dance-off, I'm ready to
-          collaborate seamlessly. Searching for a coding maestro who crafts code
-          and jokes with finesse? Your quest ends here! Let's squash bugs, turn
-          tech challenges into thrilling quests, and craft a future where coding
-          and laughter unite. 🐜🎶 Ready for this humorous coding escapade? 🎮🌠
+        <div className="text-center m-4">
+          <p className="sm:px-5 text-center md:text-left font-light leading-relaxed">
+            I am a passionate front-end developer with a strong focus on the
+            Next.js framework. My journey in web development is fueled by a deep
+            love for creating visually stunning websites and delivering
+            exceptional work. Over the next five years, I'm dedicated to further
+            elevating my front-end development skills and contributing to the
+            industry's growth. With a creative mindset and an unwavering
+            commitment to embracing new challenges, I'm eager to make a positive
+            impact as a front-end developer in the Next.js environment.
+            <br></br>
+            <br></br>
+            During my internships, I've had the privilege of working on projects
+            that allowed me to refine my UI/UX design skills and collaborate
+            effectively with teams to deliver high-quality solutions. My
+            proficiency in HTML, CSS, JavaScript, ReactJS, and Next.js, combined
+            with a strong foundation in UI/UX design principles, positions me as
+            a developer who can transform ideas into captivating digital
+            experiences. Connect with me to explore how I can bring your web
+            projects to life.
+          </p>
         </div>
-      </div>
-    </section>
+      </section>
+    </>
   );
 }

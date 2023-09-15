@@ -2,13 +2,13 @@
 
 export default function Experience() {
   return (
-    <section id="experience" className="my-6 ">
+    <section id="experience" className="my-6 mx-6 ">
       <div className="grid justify-center ">
-        <h1 className="text-center font-extrabold text-[22px] md:text-[28px] lg:text-[32px] md:mt-6 lg:mt-10 mt-3 md:mb-6 mb-0 lg:mb-12  py-2 px-4 text-black border border-gray-600 w-fit rounded-xl">
-          My Experience
+        <h1 className="text-center font-extrabold text-[22px] md:text-[28px] lg:text-[32px] md:mt-6 lg:mt-10 mt-3 md:mb-6 mb-0 lg:mb-12  py-2 px-4 text-black border  w-fit rounded-xl font-newsreader">
+          MY EXPERIENCE
         </h1>
       </div>
-      <div className="grid md:grid-cols-2 h-fit grid-rows-1">
+      <div className="grid md:grid-cols-2 h-fit grid-rows-1 font-cursive">
         <div className="col-span-1 md:border-r-2 border-black">
           <div className="border-t-4 border-black border-dotted my-8 p-6 ">
             <h1 className="text-left text-xl font-bold ">Transdata</h1>
@@ -16,19 +16,18 @@ export default function Experience() {
             <p className="text-center p-3 font-semibold ">
               Flutter Mobile App Development Intern
             </p>
-            <div className="text-center p-3 hover:text-[18px]">
+            <div className="text-center p-3 hover:font-bold">
               <ul>
                 <li>
-                  📚 Developed e-learning system in Flutter, enhancing app
-                  development skills 🚀
+                  Developed e-learning system in Flutter, enhancing app
+                  development skills
                 </li>
                 <li>
-                  💻 Created user-friendly interfaces, refining UI/UX expertise
-                  ✨
+                  Created user-friendly interfaces, refining UI/UX expertise
                 </li>
                 <li>
-                  🤝 Collaborated effectively for high-quality app delivery,
-                  improving teamwork and communication 🤗
+                  Collaborated effectively for high-quality app delivery,
+                  improving teamwork and communication
                 </li>
               </ul>
             </div>
@@ -38,22 +37,22 @@ export default function Experience() {
           <div className="border-t-4 border-black border-dotted md:mt-[8rem] p-6 ">
             <h1 className="text-left text-xl font-bold ">Shayan Solutions</h1>
             <p className="text-center p-3 font-light">April 2023 - July 2023</p>
-            <p className="text-center p-3 font-semibold ">
+            <p className="text-center p-3 font-semibold  font-cursive">
               MERN Stack Developer Intern
             </p>
-            <div className="text-center p-3 hover:text-[18px]">
+            <div className="text-center p-3 hover:font-bold">
               <ul>
                 <li>
-                  📝 Contributed to an article generator website, focusing on UI
-                  design and development 🌟
+                  Contributed to an article generator website, focusing on UI
+                  design and development
                 </li>
                 <li>
-                  💻 Implemented user-friendly and visually appealing interfaces
-                  to enhance user experience 🎨
+                  Implemented user-friendly and visually appealing interfaces to
+                  enhance user experience
                 </li>
                 <li>
-                  🤝 Collaborated with the team to ensure the seamless
-                  integration of UI components into the website 🤗
+                  Collaborated with the team to ensure the seamless integration
+                  of UI components into the website
                 </li>
               </ul>
             </div>
