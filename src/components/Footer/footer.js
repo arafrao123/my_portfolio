@@ -2,6 +2,51 @@
 import React, { useState } from "react";
 
 export default function Footer() {
+  const [isSubmitted, setIsSubmitted] = useState(false);
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    phone: "",
+    details: "",
+  });
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+
+    // Basic form validation
+    if (
+      !formData.name ||
+      !formData.email ||
+      !formData.phone ||
+      !formData.details
+    ) {
+      alert("Please fill out all required fields.");
+      return;
+    }
+
+    // Perform the form submission here, e.g., using fetch or axios
+    try {
+      const response = await fetch(
+        "https://getform.io/f/962dd32e-917f-4d14-8f32-7c4ce15dec53",
+        {
+          method: "POST",
+          body: new FormData(e.target),
+        }
+      );
+
+      if (response.ok) {
+        setIsSubmitted(true);
+      }
+    } catch (error) {
+      console.error("Form submission error:", error);
+    }
+  };
+
+  const handleInputChange = (e) => {
+    const { name, value } = e.target;
+    setFormData({ ...formData, [name]: value });
+  };
+
   return (
     <>
       <section
@@ -39,38 +84,53 @@ export default function Footer() {
             </div>
             <div className="w-full px-4 lg:w-1/2 xl:w-5/12">
               <div className="relative p-8 bg-white shadow-xl shadow-yellow-700 rounded-lg  sm:p-12">
-                <form>
-                  <ContactInputBox
-                    type="text"
-                    name="name"
-                    placeholder="Your Name"
-                  />
-                  <ContactInputBox
-                    type="text"
-                    name="email"
-                    placeholder="Your Email"
-                  />
-                  <ContactInputBox
-                    type="text"
-                    name="phone"
-                    placeholder="Your Phone"
-                  />
-                  <ContactTextArea
-                    row="6"
-                    placeholder="Your Message"
-                    name="details"
-                    defaultValue=""
-                  />
-                  <div>
-                    <button
-                      type="submit"
-                      className="w-full p-3 text-white transition border rounded border-primary bg-primary hover:bg-opacity-90"
-                    >
-                      Send Message
-                    </button>
-                  </div>
-                </form>
-                <div></div>
+                <div>
+                  {isSubmitted ? (
+                    <div className="text-green-500">
+                      Form submitted successfully!
+                    </div>
+                  ) : (
+                    <form onSubmit={handleSubmit}>
+                      <ContactInputBox
+                        type="text"
+                        name="name"
+                        placeholder="Your Name"
+                        value={formData.name}
+                        onChange={handleInputChange}
+                      />
+                      <ContactInputBox
+                        type="text"
+                        name="email"
+                        placeholder="Your Email"
+                        value={formData.email}
+                        onChange={handleInputChange}
+                      />
+                      <ContactInputBox
+                        type="text"
+                        name="phone"
+                        placeholder="Your Phone"
+                        value={formData.phone}
+                        onChange={handleInputChange}
+                      />
+                      <ContactTextArea
+                        row="6"
+                        placeholder="Your Message"
+                        name="details"
+                        defaultValue=""
+                        value={formData.details}
+                        onChange={handleInputChange}
+                      />
+                      <div>
+                        <button
+                          type="submit"
+                          className="w-full p-3 text-black transition border rounded border-primary bg-primary hover:bg-opacity-90 hover:bg-yellow-700"
+                        >
+                          Send Message
+                        </button>
+                      </div>
+                    </form>
+                  )}
+                </div>
               </div>
             </div>
           </div>
