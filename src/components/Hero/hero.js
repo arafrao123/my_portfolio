@@ -12,7 +12,7 @@ export default function Hero() {
       {/* :HERO BACKGROUND */}
       <div className="absolute w-full h-full bg-black">
         <img
-          src="/my_img3.png"
+          src="./my_img3.png"
           alt=""
           className="absolute -right-28 w-full h-full object-cover"
         />
