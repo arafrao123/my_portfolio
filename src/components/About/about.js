@@ -9,7 +9,7 @@ export default function AboutMe() {
           ABOUT ME
         </h1>
         <div className="grid justify-center">
-          <img src="/aboutme.svg" alt="mine" />
+          <img src="./aboutme.svg" alt="mine" />
         </div>
         <div className="text-center m-4">
           <p className="sm:px-5 text-center md:text-left font-light leading-relaxed">
