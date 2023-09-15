@@ -21,12 +21,15 @@ export default function Navbar() {
           </span>
         </a>
         <div className="flex md:order-2">
-          <Link href="https://www.linkedin.com/in/arafkhalid/">
+          <Link
+            href="https://drive.google.com/file/d/1sNH-nznBVvOGb9YDkahvAn9092Gs--iZ/view?usp=sharing"
+            download="CV- Araf Khalid.pdf"
+          >
             <button
               type="button"
               className="text-white focus:ring-4 focus:outline-none font-medium rounded-lg text-sm px-4 py-2 text-center mr-3 md:mr-0 bg-yellow-700 hover:bg-black focus:ring-yellow-900"
             >
-              Connect With Me
+              Download My Resume
             </button>
           </Link>
 
@@ -85,6 +88,14 @@ export default function Navbar() {
                 className="block py-2 pl-3 pr-4 text-gray-900 rounded hover:font-bold md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-yellow-700 dark:text-black  dark:hover:text-yellow-700 md:dark:hover:bg-transparent dark:border-gray-700"
               >
                 Skills
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://www.linkedin.com/in/arafkhalid/"
+                className="block py-2 pl-3 pr-4 text-gray-900 rounded hover:font-bold md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-yellow-700 dark:text-black  dark:hover:text-yellow-700 md:dark:hover:bg-transparent dark:border-gray-700"
+              >
+                Connect
               </a>
             </li>
             <li>
