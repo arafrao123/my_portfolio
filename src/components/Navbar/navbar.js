@@ -1,8 +1,6 @@
 "use client";
 import Link from "next/link";
 import React from "react";
-import ReactDOM from "react-dom";
-import { SocialIcon } from "react-social-icons";
 import { useState } from "react";
 
 export default function Navbar() {
