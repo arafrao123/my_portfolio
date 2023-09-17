@@ -21,9 +21,9 @@ export default function Projects() {
           </div>
         </Link>
 
-        <Link href="https://github.com/arafrao123/MERNstackBasicProject">
+        <Link href="https://github.com/arafrao123/coffee-shop-website.git">
           <div className="col-span-1 md:p-5 p-2  font-bold border-yellow-700 border-4 rounded-2xl h-full w-full bg-gray-400 bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-10 hover:animate-bounce text-center shadow-2xl shadow-yellow-500/20 ">
-            MERN Stack Basic Project
+            Coffee Shop Website
           </div>
         </Link>
         <Link href="https://github.com/AbubakarWebDev/Filend-Frontend-ReactJS">
